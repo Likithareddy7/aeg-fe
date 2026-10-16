@@ -27,6 +27,11 @@ export default function LoginPage() {
 
   return (
     <div className="page-container" style={{ maxWidth: 360, margin: "80px auto" }}>
+      <img
+        src="/brightspeed-logo.png"
+        alt="Brightspeed"
+        style={{ display: "block", height: 34, width: "auto", margin: "0 auto 28px" }}
+      />
       <div className="card">
         <h1 style={{ marginTop: 0 }}>Sign in</h1>
         <form onSubmit={handleSubmit} style={{ display: "grid", gap: 12 }}>

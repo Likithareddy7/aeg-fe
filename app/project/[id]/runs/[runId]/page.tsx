@@ -149,7 +149,7 @@ export default function RunDashboardPage() {
               <p className="muted" style={{ fontSize: "0.85em" }}>
                 Steps before {run.resumedFromStepOrder} were not re-executed this run -- their
                 outcome is inherited from{" "}
-                <a href={`/project/${params.id}/runs/${run.resumedFromRunId}`} style={{ color: "var(--accent)" }}>
+                <a href={`/project/${params.id}/runs/${run.resumedFromRunId}`} style={{ color: "var(--accent-text)" }}>
                   run {run.resumedFromRunId.slice(-8)}
                 </a>{" "}
                 and not re-verified here.

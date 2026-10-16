@@ -18,13 +18,13 @@ import {
 import { api } from "../../../../lib/api";
 import { SkeletonBlock } from "../../../../components/Skeleton";
 
-const COLOR_SUCCESS = "#34d399";
-const COLOR_DANGER = "#f87171";
-const COLOR_WARNING = "#fb923c";
-const COLOR_MUTED = "#929cb3";
-const COLOR_INFO = "#6c86ad";
-const COLOR_BORDER = "#232c42";
-const COLOR_SURFACE_2 = "#0f1524";
+const COLOR_SUCCESS = "#198754";
+const COLOR_DANGER = "#dc3545";
+const COLOR_WARNING = "#fa783c";
+const COLOR_MUTED = "#737373";
+const COLOR_INFO = "#e0a800";
+const COLOR_BORDER = "#e1e1e3";
+const COLOR_SURFACE_2 = "#f3f3f4";
 
 function formatDate(d: string): string {
   return new Date(d).toLocaleDateString(undefined, { month: "short", day: "numeric" });

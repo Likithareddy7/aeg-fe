@@ -19,7 +19,6 @@ import {
   LogoutIcon,
   PlugIcon,
   SettingsIcon,
-  ShieldIcon,
   UserIcon,
   UsersIcon,
 } from "./icons";
@@ -120,7 +119,7 @@ export function Sidebar() {
     const { Icon } = item;
     return (
       <a href={item.href} className={`sidebar-nav-item ${active ? "active" : ""}`}>
-        <Icon size={17} color={active ? "var(--accent)" : "var(--text-dim)"} strokeWidth={1.7} />
+        <Icon size={17} color={active ? "var(--text)" : "var(--text-dim)"} strokeWidth={1.7} />
         <span>{item.label}</span>
       </a>
     );
@@ -129,15 +128,8 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <div className="sidebar-logo">
-          <ShieldIcon size={17} color="#fff" strokeWidth={2} />
-        </div>
-        <div>
-          <div className="sidebar-brand-name">
-            Aegis<span style={{ color: "var(--accent)" }}>QA</span>
-          </div>
-          <div className="sidebar-brand-tagline">AGENTIC TESTING</div>
-        </div>
+        <img className="sidebar-logo" src="/brightspeed-logo.png" alt="Brightspeed" />
+        <div className="sidebar-brand-tagline">AEGISQA &middot; AGENTIC TESTING</div>
       </div>
 
       <div className="sidebar-nav">

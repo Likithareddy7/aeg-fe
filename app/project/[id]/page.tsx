@@ -193,11 +193,11 @@ export default function ProjectPage() {
       {lastBatch && (
         <p className="muted" style={{ marginTop: -8 }}>
           Last "Run all" started {lastBatch.count} test(s) &middot; download the{" "}
-          <a href={api.batchJunitUrl(lastBatch.batchId)} style={{ color: "var(--accent)" }}>
+          <a href={api.batchJunitUrl(lastBatch.batchId)} style={{ color: "var(--accent-text)" }}>
             JUnit XML
           </a>{" "}
           or{" "}
-          <a href={api.batchHtmlReportUrl(lastBatch.batchId)} style={{ color: "var(--accent)" }}>
+          <a href={api.batchHtmlReportUrl(lastBatch.batchId)} style={{ color: "var(--accent-text)" }}>
             HTML report
           </a>{" "}
           once those runs finish.

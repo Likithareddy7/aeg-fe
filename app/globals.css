@@ -4,32 +4,35 @@
   --font-display: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  /* Aegis palette -- dark-only by design (see DESIGN.md). --accent is reserved
-     exclusively for "live/active/running" states, never used decoratively. */
-  --bg: #0b0f1a;
-  --surface: #141b2e;
-  --surface-2: #0f1524;
-  --border: #232c42;
-  --divider: #1a2138;
-  --sidebar-bg: #0a0e18;
-  --text: #f4f6fb;
-  --text-dim: #929cb3;
-  --text-faint: #5c6884;
-  --accent: #f4b942;
-  --accent-dim: #a9852f;
-  --accent-ink: #2a1f04;
-  --accent-2: #6c86ad; /* quiet/info -- replaces the old purple secondary accent */
-  --success: #34d399;
-  --warning: #fb923c;
-  --danger: #f87171;
-  --info: #6c86ad;
+  /* Brightspeed palette, light theme (matching brightspeed.com): white and
+     cream surfaces, charcoal #1F1F1F text, yellow #FFC800 for primary actions
+     and live/running states, orange #FA783C as the secondary color.
+     Yellow is too light for text on white, so text uses --accent-text. */
+  --bg: #fcfcfc;
+  --surface: #ffffff;
+  --surface-2: #f3f3f4;
+  --border: #e1e1e3;
+  --divider: #ececee;
+  --sidebar-bg: #fffae6;
+  --text: #1f1f1f;
+  --text-dim: #595959;
+  --text-faint: #737373;
+  --accent: #ffc800;
+  --accent-dim: #e0b000;
+  --accent-ink: #1f1f1f;
+  --accent-text: #8a6500;
+  --accent-2: #fa783c;
+  --success: #198754;
+  --warning: #c2410c;
+  --danger: #dc3545;
+  --info: #595959;
   --radius: 10px;
   --radius-lg: 16px;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 1px 2px rgba(31, 31, 31, 0.06);
+  --shadow-md: 0 8px 24px rgba(31, 31, 31, 0.08);
   --sidebar-width: 250px;
-  --label: #5c6884;
-  color-scheme: dark;
+  --label: #737373;
+  color-scheme: light;
 }
 
 * {
@@ -58,7 +61,6 @@ h1,
 h2,
 h3,
 .section-title,
-.sidebar-brand-name,
 .metric-card .value,
 .hero-card .value,
 .stat-card .value {
@@ -179,12 +181,10 @@ h3,
 }
 
 .btn.primary {
-  /* Deliberately NOT the accent color -- gold is reserved for "this is live
-     right now" (see DESIGN.md); an ordinary primary action gets a plain,
-     confident light-fill button instead, so gold stays meaningful. */
-  background: var(--text);
-  border-color: transparent;
-  color: var(--bg);
+  /* Brightspeed yellow with a charcoal outline and text, as on brightspeed.com. */
+  background: var(--accent);
+  border-color: var(--text);
+  color: var(--accent-ink);
   font-weight: 600;
   box-shadow: var(--shadow-sm);
 }
@@ -268,7 +268,7 @@ select:focus {
   color: var(--text-dim);
 }
 .badge.approved {
-  color: var(--accent);
+  color: var(--accent-text);
   background: color-mix(in srgb, var(--accent) 16%, transparent);
 }
 .badge.skipped {
@@ -353,12 +353,10 @@ select:focus {
 }
 
 .chat-bubble.user {
-  /* Quiet blue-gray, not the accent -- gold stays reserved for the agent's
-     own live activity (tool-call chips, streaming status), so it isn't
-     diluted by also coloring the human's static, already-sent messages. */
+  /* Brightspeed's pale yellow, as in the site's highlighted bands. */
   align-self: flex-end;
-  background: var(--accent-2);
-  color: white;
+  background: #fff1bf;
+  color: var(--text);
   border-bottom-right-radius: 2px;
 }
 
@@ -547,29 +545,18 @@ select:focus {
 
 .sidebar-brand {
   display: flex;
-  align-items: center;
-  gap: 11px;
-  padding: 20px 20px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 22px 20px 18px;
   flex: 0 0 auto;
 }
 
 .sidebar-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
-  background: linear-gradient(145deg, var(--accent), var(--accent-2));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 35%, transparent);
-}
-
-.sidebar-brand-name {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-  line-height: 1.1;
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 100%;
 }
 
 .sidebar-brand-tagline {
@@ -811,7 +798,7 @@ select:focus {
 
 .stepper-step.active {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 600;
   background: var(--surface);
 }
@@ -929,7 +916,7 @@ select:focus {
 
 .hero-card-info-btn:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .trend-delta {
@@ -988,7 +975,7 @@ select:focus {
 .help-hero {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(120% 160% at 0% 0%, #1b2740 0%, var(--surface) 46%);
+  background: radial-gradient(120% 160% at 0% 0%, color-mix(in srgb, var(--accent) 7%, var(--surface)) 0%, var(--surface) 46%);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 30px;
@@ -1009,7 +996,7 @@ select:focus {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: color-mix(in srgb, var(--accent-2) 55%, white);
+  color: color-mix(in srgb, var(--accent-2) 70%, black);
   background: color-mix(in srgb, var(--accent-2) 14%, transparent);
   padding: 5px 11px;
   border-radius: 999px;
@@ -1055,7 +1042,7 @@ select:focus {
 }
 .help-chip:hover {
   border-color: var(--accent-2);
-  color: color-mix(in srgb, var(--accent-2) 55%, white);
+  color: color-mix(in srgb, var(--accent-2) 70%, black);
 }
 
 .help-layout {
@@ -1113,7 +1100,7 @@ select:focus {
   height: 5px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: #3a4661;
+  background: #bfbfbf;
 }
 
 .help-toc-item.active {
@@ -1127,7 +1114,7 @@ select:focus {
 }
 
 .help-toc-item.hilite {
-  color: #cbd5e1;
+  color: var(--text-dim);
   background: color-mix(in srgb, var(--accent-2) 13%, transparent);
 }
 .help-toc-item.hilite .dot {
@@ -1274,7 +1261,7 @@ select:focus {
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
-  background: #141d2f;
+  background: var(--surface);
 }
 
 .help-faq-question {

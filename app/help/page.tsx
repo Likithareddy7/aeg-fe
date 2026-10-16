@@ -321,7 +321,7 @@ export default function HelpPage() {
                   sectionRefs.current.gettingStarted = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                   GET STARTED
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -333,7 +333,7 @@ export default function HelpPage() {
                 </p>
 
                 <div className="card" style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 20 }}>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 20 }}>
                     Quick start
                   </div>
                   <div className="help-quickstart">
@@ -379,7 +379,7 @@ export default function HelpPage() {
                     </div>
                   </div>
                   <div className="help-card">
-                    <div className="help-icon-tile" style={{ background: "rgba(6,182,212,.14)" }}>
+                    <div className="help-icon-tile" style={{ background: "rgba(250,120,60,.14)" }}>
                       <SettingsIcon size={16} color="var(--info)" strokeWidth={1.8} />
                     </div>
                     <div style={{ fontSize: "0.8rem", fontWeight: 600, marginTop: 12 }}>Add a target URL</div>
@@ -398,7 +398,7 @@ export default function HelpPage() {
                   sectionRefs.current.testGeneration = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                   CORE WORKFLOW
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -425,7 +425,7 @@ export default function HelpPage() {
                               height: 22,
                               borderRadius: 7,
                               background: "color-mix(in srgb, var(--accent-2) 14%, transparent)",
-                              color: "color-mix(in srgb, var(--accent-2) 55%, white)",
+                              color: "color-mix(in srgb, var(--accent-2) 75%, black)",
                               fontSize: "0.7rem",
                               fontWeight: 700,
                               display: "flex",
@@ -436,18 +436,18 @@ export default function HelpPage() {
                           >
                             {i + 1}
                           </div>
-                          <div style={{ fontSize: "0.75rem", color: "#cbd5e1", lineHeight: 1.5 }}>{text}</div>
+                          <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", lineHeight: 1.5 }}>{text}</div>
                         </div>
                       ))}
                     </div>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                     <div className="help-callout info">
-                      <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 55%, white)", display: "flex", alignItems: "center", gap: 8 }}>
+                      <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 75%, black)", display: "flex", alignItems: "center", gap: 8 }}>
                         <HealIcon size={15} color="var(--accent-2)" strokeWidth={1.8} />
                         Resilient selectors, by default
                       </div>
-                      <div style={{ fontSize: "0.72rem", color: "#cbd5e1", marginTop: 9, lineHeight: 1.55 }}>
+                      <div style={{ fontSize: "0.72rem", color: "var(--text-dim)", marginTop: 9, lineHeight: 1.55 }}>
                         The agent prefers stable locators — role, label, visible text, and placeholder — over
                         brittle CSS or XPath that break on the smallest markup change.
                       </div>
@@ -458,7 +458,7 @@ export default function HelpPage() {
                       </div>
                     </div>
                     <div className="help-card" style={{ display: "flex", alignItems: "center", gap: 13 }}>
-                      <div className="help-icon-tile" style={{ background: "rgba(6,182,212,.14)", flexShrink: 0 }}>
+                      <div className="help-icon-tile" style={{ background: "rgba(250,120,60,.14)", flexShrink: 0 }}>
                         <BarChartIcon size={17} color="var(--info)" strokeWidth={1.8} />
                       </div>
                       <div className="muted" style={{ fontSize: "0.72rem", lineHeight: 1.5 }}>
@@ -478,7 +478,7 @@ export default function HelpPage() {
                   sectionRefs.current.reviewing = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                   CORE WORKFLOW
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -489,7 +489,7 @@ export default function HelpPage() {
                   steps, and check selector quality per step.
                 </p>
                 <div className="card" style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                     Editable fields
                   </div>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
@@ -503,7 +503,7 @@ export default function HelpPage() {
                   </div>
                 </div>
                 <div className="card" style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                     Assertion step types
                   </div>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
@@ -579,7 +579,7 @@ export default function HelpPage() {
                   sectionRefs.current.running = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                   CORE WORKFLOW
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -616,11 +616,11 @@ export default function HelpPage() {
                   </div>
                 </div>
                 <div className="help-callout ai" style={{ marginTop: 14 }}>
-                  <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 55%, white)", display: "flex", alignItems: "center", gap: 8 }}>
+                  <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 75%, black)", display: "flex", alignItems: "center", gap: 8 }}>
                     <BugIcon size={15} color="var(--accent-2)" strokeWidth={1.8} />
                     When something fails
                   </div>
-                  <div style={{ fontSize: "0.75rem", color: "#cbd5e1", marginTop: 9, lineHeight: 1.6 }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", marginTop: 9, lineHeight: 1.6 }}>
                     You get a plain-language explanation of what went wrong — not just a stack trace —
                     alongside a suggested fix. If it&apos;s a selector that drifted, self-healing may already
                     have a proposal waiting for your approval.
@@ -636,7 +636,7 @@ export default function HelpPage() {
                   sectionRefs.current.cicd = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                   CORE WORKFLOW
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -678,7 +678,7 @@ export default function HelpPage() {
                   sectionRefs.current.environments = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "#67e8f9", background: "rgba(6,182,212,.13)" }}>
+                <span className="help-section-badge" style={{ color: "var(--warning)", background: "rgba(250,120,60,.13)" }}>
                   CONFIGURATION
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -690,7 +690,7 @@ export default function HelpPage() {
                 </p>
                 <div className="grid-2">
                   <div className="help-card">
-                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                       What an environment holds
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
@@ -700,7 +700,7 @@ export default function HelpPage() {
                         "Headless mode & viewport size",
                         "Encrypted credentials & secrets",
                       ].map((item) => (
-                        <div key={item} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: "0.75rem", color: "#cbd5e1" }}>
+                        <div key={item} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: "0.75rem", color: "var(--text-dim)" }}>
                           <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--info)", flexShrink: 0 }} />
                           {item}
                         </div>
@@ -708,18 +708,18 @@ export default function HelpPage() {
                     </div>
                   </div>
                   <div className="help-card">
-                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                       Referencing secrets
                     </div>
                     <div className="muted" style={{ fontSize: "0.72rem", lineHeight: 1.55 }}>
                       Reference an encrypted value from any step with{" "}
-                      <code style={{ color: "var(--accent)" }}>{"{{env.KEY}}"}</code>. The secret is resolved
+                      <code style={{ color: "var(--accent-text)" }}>{"{{env.KEY}}"}</code>. The secret is resolved
                       server-side right before the action runs, never stored in the test case or passed to
                       chat/LLM context.
                     </div>
                     <div className="help-code">
                       <div>
-                        <span style={{ color: "var(--accent-2)" }}>await</span> <span style={{ color: "var(--accent)" }}>login</span>(
+                        <span style={{ color: "var(--accent-2)" }}>await</span> <span style={{ color: "var(--accent-text)" }}>login</span>(
                         <span style={{ color: "var(--success)" }}>&apos;admin@acme.io&apos;</span>,
                       </div>
                       <div style={{ paddingLeft: 22, color: "var(--warning)" }}>{"{{env.ADMIN_PASSWORD}}"}</div>
@@ -732,7 +732,7 @@ export default function HelpPage() {
                         gap: 6,
                         marginTop: 11,
                         fontSize: "0.65rem",
-                        color: "color-mix(in srgb, var(--success) 60%, white)",
+                        color: "color-mix(in srgb, var(--success) 75%, black)",
                         background: "color-mix(in srgb, var(--success) 14%, transparent)",
                         padding: "4px 9px",
                         borderRadius: 7,
@@ -754,7 +754,7 @@ export default function HelpPage() {
                   sectionRefs.current.selfHealing = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "#67e8f9", background: "rgba(6,182,212,.13)" }}>
+                <span className="help-section-badge" style={{ color: "var(--warning)", background: "rgba(250,120,60,.13)" }}>
                   CONFIGURATION
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -766,13 +766,13 @@ export default function HelpPage() {
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1.15fr 1fr", gap: 14 }}>
                   <div className="help-card">
-                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 14 }}>
+                    <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 14 }}>
                       What happens on a miss
                     </div>
                     <div className="help-timeline">
                       {[
                         { color: "var(--warning)", title: "Selector no longer matches", sub: "The element moved or the markup changed" },
-                        { color: "color-mix(in srgb, var(--accent-2) 60%, white)", title: "Executor tries known alternates", sub: "Any fallback locators saved on the step" },
+                        { color: "color-mix(in srgb, var(--accent-2) 75%, black)", title: "Executor tries known alternates", sub: "Any fallback locators saved on the step" },
                         { color: "var(--accent-2)", title: "AI finds the closest match", sub: "Inspects the live page for the intended element" },
                         { color: "var(--success)", title: "Logged as a pending suggestion", sub: "Awaits a human decision — nothing auto-applies" },
                       ].map((step) => (
@@ -788,11 +788,11 @@ export default function HelpPage() {
                   </div>
                   <div className="help-callout ai">
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                      <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 55%, white)", display: "flex", alignItems: "center", gap: 7 }}>
+                      <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "color-mix(in srgb, var(--accent-2) 75%, black)", display: "flex", alignItems: "center", gap: 7 }}>
                         <HealIcon size={14} color="var(--accent-2)" strokeWidth={1.8} />
                         Pending suggestion
                       </div>
-                      <span style={{ fontSize: "0.65rem", fontWeight: 700, color: "color-mix(in srgb, var(--success) 60%, white)", background: "color-mix(in srgb, var(--success) 14%, transparent)", padding: "3px 9px", borderRadius: 7 }}>
+                      <span style={{ fontSize: "0.65rem", fontWeight: 700, color: "color-mix(in srgb, var(--success) 75%, black)", background: "color-mix(in srgb, var(--success) 14%, transparent)", padding: "3px 9px", borderRadius: 7 }}>
                         High confidence
                       </span>
                     </div>
@@ -817,7 +817,7 @@ export default function HelpPage() {
                 </div>
                 <div className="help-callout success" style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 9, padding: "13px 16px" }}>
                   <CheckIcon size={15} color="var(--success)" strokeWidth={1.9} />
-                  <span style={{ fontSize: "0.78rem", color: "#cbd5e1" }}>
+                  <span style={{ fontSize: "0.78rem", color: "var(--text-dim)" }}>
                     <strong style={{ color: "var(--text)" }}>Nothing changes silently.</strong> A healed selector
                     only becomes active once an owner or admin approves it, on the Self-Healing page.
                   </span>
@@ -832,7 +832,7 @@ export default function HelpPage() {
                   sectionRefs.current.ownership = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "#67e8f9", background: "rgba(6,182,212,.13)" }}>
+                <span className="help-section-badge" style={{ color: "var(--warning)", background: "rgba(250,120,60,.13)" }}>
                   CONFIGURATION
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -844,7 +844,7 @@ export default function HelpPage() {
                 </p>
 
                 <div className="card" style={{ marginBottom: 14 }}>
-                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                  <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                     Project roles (set on a project&apos;s Members page)
                   </div>
                   <div className="grid-2" style={{ gridTemplateColumns: "repeat(4, 1fr)", gap: 10 }}>
@@ -874,7 +874,7 @@ export default function HelpPage() {
 
                 <div className="help-callout success" style={{ marginBottom: 14, display: "flex", alignItems: "flex-start", gap: 11, padding: "13px 16px" }}>
                   <CheckIcon size={15} color="var(--success)" strokeWidth={1.9} style={{ marginTop: 2, flexShrink: 0 }} />
-                  <span style={{ fontSize: "0.78rem", color: "#cbd5e1", lineHeight: 1.6 }}>
+                  <span style={{ fontSize: "0.78rem", color: "var(--text-dim)", lineHeight: 1.6 }}>
                     <strong style={{ color: "var(--text)" }}>Approving is separate from editing.</strong> Only a
                     reviewer or owner can approve or reject a test case, and never their own — an editor
                     (including the case&apos;s own author) can save draft/archived changes but can&apos;t flip a
@@ -883,7 +883,7 @@ export default function HelpPage() {
                   </span>
                 </div>
 
-                <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "#cbd5e1", marginBottom: 12 }}>
+                <div style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--text-dim)", marginBottom: 12 }}>
                   Test-case authorship (on top of your project role)
                 </div>
                 <div className="card" style={{ padding: 0, overflow: "hidden" }}>
@@ -898,7 +898,7 @@ export default function HelpPage() {
                     </thead>
                     <tbody>
                       {[
-                        { who: "Creator (test case author)", color: "color-mix(in srgb, var(--accent-2) 60%, white)", view: true, edit: true, request: false },
+                        { who: "Creator (test case author)", color: "color-mix(in srgb, var(--accent-2) 75%, black)", view: true, edit: true, request: false },
                         { who: "Site admin", color: "var(--accent-2)", view: true, edit: true, request: false },
                         { who: "Everyone else with project access", color: "var(--text-dim)", view: true, edit: false, request: true },
                       ].map((row) => (
@@ -953,7 +953,7 @@ export default function HelpPage() {
                   sectionRefs.current.dashboard = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 60%, white)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 75%, black)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
                   INSIGHTS &amp; ADMIN
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -989,7 +989,7 @@ export default function HelpPage() {
                   sectionRefs.current.reports = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 60%, white)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 75%, black)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
                   INSIGHTS &amp; ADMIN
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -1023,7 +1023,7 @@ export default function HelpPage() {
                   sectionRefs.current.admin = el;
                 }}
               >
-                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 60%, white)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
+                <span className="help-section-badge" style={{ color: "color-mix(in srgb, var(--warning) 75%, black)", background: "color-mix(in srgb, var(--warning) 14%, transparent)" }}>
                   INSIGHTS &amp; ADMIN
                 </span>
                 <h2 className="section-title" style={{ fontSize: "1.3rem", textTransform: "none", margin: "11px 0 6px" }}>
@@ -1043,7 +1043,7 @@ export default function HelpPage() {
                     <div style={{ fontSize: "0.78rem", fontWeight: 600, marginBottom: 12 }}>Site-wide roles</div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                       <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 12px", background: "var(--bg)", border: "1px solid var(--border)", borderRadius: 10 }}>
-                        <span className="badge" style={{ color: "color-mix(in srgb, var(--accent-2) 55%, white)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
+                        <span className="badge" style={{ color: "color-mix(in srgb, var(--accent-2) 75%, black)", background: "color-mix(in srgb, var(--accent-2) 14%, transparent)" }}>
                           Admin
                         </span>
                         <span className="muted" style={{ fontSize: "0.72rem" }}>
@@ -1076,7 +1076,7 @@ export default function HelpPage() {
                         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                           <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.75rem" }}>
                             <span className="muted">Active model</span>
-                            <code style={{ color: "#cbd5e1" }}>{adminConfig.model}</code>
+                            <code style={{ color: "var(--text-dim)" }}>{adminConfig.model}</code>
                           </div>
                           <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.75rem" }}>
                             <span className="muted">Credential encryption</span>
